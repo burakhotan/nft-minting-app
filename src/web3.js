@@ -42,8 +42,8 @@ export const mintNFT = async (imageUrl, address) => {
             }).then((response) => {
                 SweetAlert.fire({
                     icon: "success",
-                    text: "Your transaction is successful.",
-                    footer: `<a href="https://rinkeby.etherscan.io//tx/${response.transactionHash}" target="_blank">Check Tx Status</a>&emsp;<a href="${imageUrl}" target="_blank">Inspect Image</a>&emsp;<a href="https://gateway.pinata.cloud/ipfs/${ipfsHash}?preview=1" target="_blank">Check Metadata</a>`,
+                    text: "Successfully Minted",
+                    footer: `<a href="https://rinkeby.etherscan.io//tx/${response.transactionHash}" target="_blank">Check Tx Status</a>&emsp;<a href="${imageUrl}" target="_blank">Inspect Image</a>`,
                 });
             });
     } catch (e) {
