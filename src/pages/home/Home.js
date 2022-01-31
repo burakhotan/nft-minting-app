@@ -70,7 +70,7 @@ const Home = () => {
             <div className="container">
                 <Row >
                     <Col>
-                        <Button onClick={() => activateWallet()} id="mintNftButton" color="primary" >
+                        <Button style={{ marginBottom: 15 }} onClick={() => activateWallet()} id="mintNftButton" color="primary" >
                             {address == "" ? "Connect" : "Connected"}
                         </Button>
                     </Col>
